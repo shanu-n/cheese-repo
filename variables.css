@@ -1,0 +1,12 @@
+:root {
+    --bg-cream: #fffdf5;
+    --text-charcoal: #333333;
+    --heading-brown: #5d4037;
+    --subhead-gold: #8d6e63;
+    --accent-orange: #ff9800;
+    --highlight-beige: #fff8e1;
+    --border-gray: #dcdcdc;
+    --serif-stack: "Georgia", "Times New Roman", serif;
+    --content-width: 65ch;
+    --gap: 1.5em;
+  }
