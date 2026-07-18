@@ -1,0 +1,131 @@
+/* deployed page: hdhdhf */
+
+/* root-level definitions first */
+:root {
+    --bg-cream: #fffdf5;
+    --text-charcoal: #333333;
+    --heading-brown: #5d4037;
+    --subhead-gold: #8d6e63;
+    --accent-orange: #ff9800;
+    --highlight-beige: #fff8e1;
+    --border-gray: #dcdcdc;
+    --serif-stack: "Georgia", "Times New Roman", serif;
+    --content-width: 65ch;
+    --gap: 1.5em;
+  }
+  
+  /* global reset */
+  * {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  /* typography, body */
+  body {
+    background: var(--bg-cream);
+    color: var(--text-charcoal);
+    font-family: var(--serif-stack);
+    line-height: 1.6;
+    font-style: italic;
+    max-width: var(--content-width);
+    margin-inline: auto;
+    padding: 5vh 5%;
+  }
+  
+  /* broad element rules */
+  h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-style: italic;
+    color: var(--heading-brown);
+    margin-bottom: 1rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: italic;
+    color: var(--heading-brown);
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  blockquote {
+    background: var(--highlight-beige);
+    border-inline-start: 5px solid var(--accent-orange);
+    padding: 1em 2em;
+    font-style: italic;
+    margin: 2rem 0;
+    font-family: var(--serif-stack);
+  }
+  
+  /* tree-based selectors */
+  header p {
+    font-size: 0.9rem;
+    font-style: italic;
+    color: var(--subhead-gold);
+  }
+  
+  article > p {
+    margin-bottom: var(--gap);
+  }
+  
+  dt + dd {
+    margin-bottom: 1em;
+    padding-inline-start: 1em;
+    border-inline-start: 1px solid var(--border-gray);
+  }
+  
+  /* attributes */
+  [lang] {
+    font-style: italic;
+  }
+  
+  [type="text"] {
+    border: 1px solid var(--border-gray);
+    padding: 0.5em;
+  }
+  
+  /* class from part 1 */
+  .latin {
+    font-style: italic;
+    text-decoration: underline;
+  }
+  
+  /* id on the warning paragraph */
+  #cheese-warning {
+    background: var(--highlight-beige);
+    border: 1px solid var(--accent-orange);
+    padding: 1.5em;
+    font-weight: bold;
+    font-style: italic;
+  }
+  
+  /* state */
+  a:hover {
+    text-decoration: none;
+  }
+  
+  a:focus,
+  input:focus,
+  button:focus {
+    outline: 2px solid var(--accent-orange);
+  }
+  
+  /* checked label styling */
+  input:checked + span {
+    font-weight: bold;
+    color: var(--accent-orange);
+  }
+  
+  blockquote footer::before {
+    content: "source:";
+    color: var(--subhead-gold);
+  }
+  
+  footer {
+    font-size: 0.75rem;
+    font-style: italic;
+    text-align: center;
+    margin-top: 3rem;
+  }
